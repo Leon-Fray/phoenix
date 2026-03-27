@@ -17,8 +17,8 @@ export default function Home() {
             <Link href="#pricing" className="hover:text-phoenix-900 transition-colors">Pricing</Link>
             <Link href="#results" className="hover:text-phoenix-900 transition-colors">Results</Link>
           </nav>
-          <Link 
-            href="#contact" 
+          <Link
+            href="#contact"
             className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-phoenix-900 rounded-lg hover:bg-phoenix-800 transition-colors shadow-sm"
           >
             Get a Free Audit
@@ -30,7 +30,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-phoenix-100/50 via-white to-white -z-10" />
-          
+
           <div className="max-w-7xl mx-auto px-6 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
               <div className="mt-24 sm:mt-32 lg:mt-16">
@@ -57,20 +57,28 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            
+
             {/* Hero Visual / Trust Indicator */}
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow flex justify-center lg:justify-end">
               <div className="relative w-full max-w-lg">
                 <div className="absolute -inset-4 rounded-xl bg-phoenix-50/50 mix-blend-multiply blur-2xl filter" />
                 <div className="relative rounded-2xl bg-white shadow-xl shadow-phoenix-200/50 ring-1 ring-phoenix-200/50 p-8 sm:p-10 flex flex-col items-center justify-center text-center">
-                   <h3 className="text-xl font-semibold text-phoenix-900 mb-6 font-sans">Platforms We Clean Up</h3>
-                   <div className="grid grid-cols-2 gap-8 w-full opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                     <div className="flex items-center justify-center font-bold text-xl text-gray-500">Google</div>
-                     <div className="flex items-center justify-center font-bold text-xl text-red-500">Yelp</div>
-                     <div className="flex items-center justify-center font-bold text-xl text-orange-500">Reddit</div>
-                     <div className="flex items-center justify-center font-bold text-xl text-green-600">Glassdoor</div>
-                   </div>
-                   <p className="mt-8 text-sm text-phoenix-500">Over 50+ local businesses restored.</p>
+                  <h3 className="text-xl font-semibold text-phoenix-900 mb-6 font-sans">Platforms We Clean Up</h3>
+                  <div className="grid grid-cols-2 gap-8 w-full">
+                    <div className="flex items-center justify-center">
+                      <Image src="/google_logo.png" alt="Google" width={120} height={40} className="object-contain h-10 w-auto" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <Image src="/yelp_logo.png" alt="Yelp" width={120} height={40} className="object-contain h-10 w-auto" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <Image src="/reddit_logo.png" alt="Reddit" width={120} height={40} className="object-contain h-20 w-auto" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <Image src="/glassdoor_logo.svg" alt="Glassdoor" width={120} height={40} className="object-contain h-10 w-auto" />
+                    </div>
+                  </div>
+                  <p className="mt-8 text-sm text-phoenix-500">Over 50+ local businesses restored.</p>
                 </div>
               </div>
             </div>
@@ -89,7 +97,7 @@ export default function Home() {
                 We take the burden of reputation management off your shoulders with a straightforward, transparent approach.
               </p>
             </div>
-            
+
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
               <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
                 <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm ring-1 ring-phoenix-200/50 hover:shadow-md transition-shadow">
@@ -105,7 +113,7 @@ export default function Home() {
                     </p>
                   </dd>
                 </div>
-                
+
                 <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm ring-1 ring-phoenix-200/50 hover:shadow-md transition-shadow">
                   <dt className="flex items-center gap-x-3 text-xl font-semibold leading-7 text-phoenix-900">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-50 text-accent-700 border border-accent-100">
@@ -119,7 +127,7 @@ export default function Home() {
                     </p>
                   </dd>
                 </div>
-                
+
                 <div className="flex flex-col bg-white rounded-2xl p-8 shadow-sm ring-1 ring-phoenix-200/50 hover:shadow-md transition-shadow">
                   <dt className="flex items-center gap-x-3 text-xl font-semibold leading-7 text-phoenix-900">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-50 text-accent-700 border border-accent-100">
@@ -147,7 +155,7 @@ export default function Home() {
                 No hidden fees. We fix the immediate bleeding with a one-time reset, and keep your reputation spotless with ongoing maintenance.
               </p>
             </div>
-            
+
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-phoenix-200/50 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none shadow-sm overflow-hidden">
               <div className="p-8 sm:p-10 lg:flex-auto bg-white">
                 <h3 className="text-2xl font-bold tracking-tight text-phoenix-900">Reputation Reset (One-Time)</h3>
@@ -225,7 +233,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
           </div>
         </section>
 
@@ -312,7 +320,7 @@ export default function Home() {
             </div>
             <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                
+
                 <div className="flex flex-col justify-between rounded-2xl bg-white/5 p-8 shadow-sm ring-1 ring-white/10 backdrop-blur-sm">
                   <div className="flex items-center gap-x-4 mb-6">
                     <Quote className="h-8 w-8 text-accent-500/50" />
@@ -384,7 +392,7 @@ export default function Home() {
                 href="tel:+18005550199"
                 className="w-full sm:w-auto rounded-lg bg-phoenix-50 border border-phoenix-200 px-8 py-4 text-base font-semibold text-phoenix-900 shadow-sm hover:bg-phoenix-100 transition-colors"
               >
-                Call (800) 555-0199
+                Call (929) 832-8875
               </a>
             </div>
             <p className="mt-6 text-sm text-phoenix-500">
