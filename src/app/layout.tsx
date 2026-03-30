@@ -8,10 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Phoenix & Co. | Reputation Management",
+  title: "Guard Rep | Reputation Management",
   description: "Results-driven reputation management specifically designed for local businesses. We rebuild your brand, mitigate bad reviews, and accelerate your growth.",
   openGraph: {
-    title: "Phoenix & Co. | Reputation Management",
+    title: "Guard Rep | Reputation Management",
     description: "Results-driven reputation management...",
   }
 };

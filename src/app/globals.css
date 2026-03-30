@@ -4,17 +4,17 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   /* Deep slate blues for a calm, professional default */
-  --color-phoenix-50: #f8fafc;
-  --color-phoenix-100: #f1f5f9;
-  --color-phoenix-200: #e2e8f0;
-  --color-phoenix-300: #cbd5e1;
-  --color-phoenix-400: #94a3b8;
-  --color-phoenix-500: #64748b;
-  --color-phoenix-600: #475569;
-  --color-phoenix-700: #334155;
-  --color-phoenix-800: #1e293b;
-  --color-phoenix-900: #0f172a;
-  --color-phoenix-950: #020617;
+  --color-guardrep-50: #f8fafc;
+  --color-guardrep-100: #f1f5f9;
+  --color-guardrep-200: #e2e8f0;
+  --color-guardrep-300: #cbd5e1;
+  --color-guardrep-400: #94a3b8;
+  --color-guardrep-500: #64748b;
+  --color-guardrep-600: #475569;
+  --color-guardrep-700: #334155;
+  --color-guardrep-800: #1e293b;
+  --color-guardrep-900: #0f172a;
+  --color-guardrep-950: #020617;
 
   /* Trustworthy teals for accents */
   --color-accent-50: #f0fdfa;
@@ -36,13 +36,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: var(--color-phoenix-950);
+  --foreground: var(--color-guardrep-950);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--color-phoenix-950);
-    --foreground: var(--color-phoenix-50);
+    --background: var(--color-guardrep-950);
+    --foreground: var(--color-guardrep-50);
   }
 }
 
