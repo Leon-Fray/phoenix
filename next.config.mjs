@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // This enables static HTML export for GitHub Pages
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  // If your repository name isn't the same as your GitHub username (e.g., username.github.io)
-  // and you're deploying to a subdirectory, uncomment the line below and replace 'your-repo-name'
-  // basePath: '/your-repo-name',
+  basePath: '/phoenix', // Replace 'phoenix' with your actual repository name
+  assetPrefix: '/phoenix', // This helps with CSS and asset paths
 };
 
 export default nextConfig;
