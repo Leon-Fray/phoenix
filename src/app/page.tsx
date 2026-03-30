@@ -309,16 +309,16 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-guardrep-900 mb-6 font-sans">Platforms We Clean Up</h3>
                   <div className="grid grid-cols-2 gap-8 w-full">
                     <div className="flex items-center justify-center">
-                      <Image src="/google_logo.png" alt="Google" width={120} height={40} className="object-contain h-10 w-auto" />
+                      <Image src="phoenix/google_logo.png" alt="Google" width={120} height={40} className="object-contain h-10 w-auto" />
                     </div>
                     <div className="flex items-center justify-center">
-                      <Image src="/yelp_logo.png" alt="Yelp" width={120} height={40} className="object-contain h-10 w-auto" />
+                      <Image src="phoenix/yelp_logo.png" alt="Yelp" width={120} height={40} className="object-contain h-10 w-auto" />
                     </div>
                     <div className="flex items-center justify-center">
-                      <Image src="/reddit_logo.png" alt="Reddit" width={120} height={40} className="object-contain h-20 w-auto" />
+                      <Image src="phoenix/reddit_logo.png" alt="Reddit" width={120} height={40} className="object-contain h-20 w-auto" />
                     </div>
                     <div className="flex items-center justify-center">
-                      <Image src="/glassdoor_logo.svg" alt="Glassdoor" width={120} height={40} className="object-contain h-10 w-auto" />
+                      <Image src="phoenix/glassdoor_logo.svg" alt="Glassdoor" width={120} height={40} className="object-contain h-10 w-auto" />
                     </div>
                   </div>
                   <p className="mt-8 text-sm text-guardrep-500">Over 50+ local businesses restored.</p>
