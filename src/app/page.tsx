@@ -676,7 +676,7 @@ export default function Home() {
                     <Quote className="h-8 w-8 text-accent-500/50" />
                   </div>
                   <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;This space reserved for your client testimonial. Replace this text with a real quote showing how you saved their business from bad reviews.&quot;
+                    &quot;Space reserved for client testimonial. Showing their review after the one time payment.&quot;
                   </p>
                   <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
                     <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">JD</div>
@@ -692,7 +692,7 @@ export default function Home() {
                     <Quote className="h-8 w-8 text-accent-500/50" />
                   </div>
                   <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;This space reserved for your client testimonial. Replace this text with a real quote showing how the one-time reset worked initially.&quot;
+                    &quot;Space reserved for client testimonial. Showing their review after the one time payment.&quot;
                   </p>
                   <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
                     <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">SM</div>
@@ -708,7 +708,7 @@ export default function Home() {
                     <Quote className="h-8 w-8 text-accent-500/50" />
                   </div>
                   <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;This space reserved for your client testimonial. Replace this text with a real quote showing the benefits of monthly maintenance.&quot;
+                    &quot;Space reserved for client testimonial. Showing their review after the one time payment.&quot;
                   </p>
                   <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
                     <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">MR</div>
