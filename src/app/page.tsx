@@ -1,3 +1,6 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -18,6 +21,7 @@ import {
   Crosshair,
 } from "lucide-react";
 import ReputationCalculator from "./components/ReputationCalculator";
+import AuditModal from "./components/AuditModal";
 
 /* ─── Inline SVG: Star Rating Recovery Chart ─────────────────────────────── */
 function StarRecoveryChart() {
@@ -240,6 +244,13 @@ const trustMetrics = [
 
 /* ─── Page ───────────────────────────────────────────────────────────────────*/
 export default function Home() {
+  const [isAuditModalOpen, setIsAuditModalOpen] = useState(false);
+
+  const openAuditModal = (e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    setIsAuditModalOpen(true);
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-guardrep-50 text-guardrep-900 selection:bg-accent-200">
       {/* Navbar */}
@@ -257,12 +268,12 @@ export default function Home() {
             <Link href="#results" className="hover:text-guardrep-900 transition-colors">Results</Link>
             <Link href="#advantage" className="hover:text-guardrep-900 transition-colors">Why Us</Link>
           </nav>
-          <Link
-            href="#contact"
+          <button
+            onClick={openAuditModal}
             className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-guardrep-900 rounded-lg hover:bg-guardrep-800 transition-colors shadow-sm"
           >
             Get a Free Audit
-          </Link>
+          </button>
         </div>
       </header>
 
@@ -289,12 +300,12 @@ export default function Home() {
                 We help local businesses—plumbers, contractors, restaurants, and dentists—clean up their brand image. We repair your online reputation quietly and effectively, so you can focus on running your business without the drama.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
-                <Link
-                  href="#contact"
+                <button
+                  onClick={openAuditModal}
                   className="rounded-lg bg-accent-700 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-accent-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-700 transition-all flex items-center gap-2"
                 >
                   Fix My Reputation <ArrowRight className="w-4 h-4" />
-                </Link>
+                </button>
                 <Link href="#process" className="text-base font-medium leading-6 text-guardrep-900 hover:text-guardrep-700 transition-colors">
                   See how we do it <span aria-hidden="true">→</span>
                 </Link>
@@ -425,12 +436,12 @@ export default function Home() {
                       <span className="text-5xl font-bold tracking-tight text-guardrep-900">$1,500</span>
                       <span className="text-sm font-semibold leading-6 tracking-wide text-guardrep-600">USD</span>
                     </p>
-                    <Link
-                      href="#contact"
+                    <button
+                      onClick={openAuditModal}
                       className="mt-10 block w-full rounded-md bg-accent-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-accent-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-700 transition-colors"
                     >
                       Start the Audit
-                    </Link>
+                    </button>
                     <p className="mt-6 text-xs leading-5 text-guardrep-500">Typically delivered in 14-30 days.</p>
                   </div>
                 </div>
@@ -649,12 +660,12 @@ export default function Home() {
 
             {/* CTA nudge */}
             <div className="mt-12 text-center">
-              <Link
-                href="#contact"
+              <button
+                onClick={openAuditModal}
                 className="inline-flex items-center gap-2 rounded-xl bg-accent-700 px-8 py-4 text-base font-semibold text-white hover:bg-accent-600 transition-all shadow-lg shadow-accent-900/40"
               >
                 Start with a Free Audit <ArrowRight className="w-4 h-4" />
-              </Link>
+              </button>
             </div>
           </div>
         </section>
@@ -676,7 +687,7 @@ export default function Home() {
                     <Quote className="h-8 w-8 text-accent-500/50" />
                   </div>
                   <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;Space reserved for client testimonial. Showing their review after the one time payment.&quot;
+                    &quot;Space reserved for client testimonial, their review after one time payment.&quot;
                   </p>
                   <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
                     <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">JD</div>
@@ -692,7 +703,7 @@ export default function Home() {
                     <Quote className="h-8 w-8 text-accent-500/50" />
                   </div>
                   <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;Space reserved for client testimonial. Showing their review after the one time payment.&quot;
+                    &quot;Space reserved for client testimonial, their review after one time payment.&quot;
                   </p>
                   <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
                     <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">SM</div>
@@ -708,7 +719,7 @@ export default function Home() {
                     <Quote className="h-8 w-8 text-accent-500/50" />
                   </div>
                   <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;Space reserved for client testimonial. Showing their review after the one time payment.&quot;
+                    &quot;Space reserved for client testimonial, their review after one time payment.&quot;
                   </p>
                   <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
                     <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">MR</div>
@@ -732,12 +743,12 @@ export default function Home() {
               Stop letting a few bad reviews dictate your business growth. Get a free, confidential audit of your online presence today.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="mailto:hello@guardrep.com"
+              <button
+                onClick={openAuditModal}
                 className="w-full sm:w-auto rounded-lg bg-accent-700 px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-accent-800 transition-colors"
               >
                 Request Free Audit
-              </a>
+              </button>
               <a
                 href="tel:+19298328875"
                 className="w-full sm:w-auto rounded-lg bg-guardrep-50 border border-guardrep-200 px-8 py-4 text-base font-semibold text-guardrep-900 shadow-sm hover:bg-guardrep-100 transition-colors"
@@ -798,6 +809,11 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <AuditModal 
+        isOpen={isAuditModalOpen} 
+        onClose={() => setIsAuditModalOpen(false)} 
+      />
     </div>
   );
 }
