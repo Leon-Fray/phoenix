@@ -682,51 +682,39 @@ export default function Home() {
             </div>
             <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="flex flex-col justify-between rounded-2xl bg-white/5 p-8 shadow-sm ring-1 ring-white/10 backdrop-blur-sm">
-                  <div className="flex items-center gap-x-4 mb-6">
-                    <Quote className="h-8 w-8 text-accent-500/50" />
-                  </div>
-                  <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;Space reserved for client testimonial, their review after one time payment.&quot;
-                  </p>
-                  <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
-                    <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">JD</div>
-                    <div>
-                      <div className="font-semibold text-white">John Doe</div>
-                      <div className="text-sm text-guardrep-400">Owner, Local Plumbing LLC</div>
-                    </div>
+                <div className="rounded-2xl bg-white/5 p-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm">
+                  <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black ring-1 ring-white/10">
+                    <video
+                      src="/testimonial1.mp4"
+                      className="w-full h-full object-contain"
+                      controls
+                      playsInline
+                      preload="metadata"
+                    />
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-between rounded-2xl bg-white/5 p-8 shadow-sm ring-1 ring-white/10 backdrop-blur-sm">
-                  <div className="flex items-center gap-x-4 mb-6">
-                    <Quote className="h-8 w-8 text-accent-500/50" />
-                  </div>
-                  <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;Space reserved for client testimonial, their review after one time payment.&quot;
-                  </p>
-                  <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
-                    <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">SM</div>
-                    <div>
-                      <div className="font-semibold text-white">Sarah Miller</div>
-                      <div className="text-sm text-guardrep-400">GM, Downtown Dental</div>
-                    </div>
+                <div className="rounded-2xl bg-white/5 p-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm">
+                  <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black ring-1 ring-white/10">
+                    <video
+                      src="/testimonial%202%20.mp4"
+                      className="w-full h-full object-contain"
+                      controls
+                      playsInline
+                      preload="metadata"
+                    />
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-between rounded-2xl bg-white/5 p-8 shadow-sm ring-1 ring-white/10 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
-                  <div className="flex items-center gap-x-4 mb-6">
-                    <Quote className="h-8 w-8 text-accent-500/50" />
-                  </div>
-                  <p className="text-base leading-7 text-guardrep-100 flex-auto italic">
-                    &quot;Space reserved for client testimonial, their review after one time payment.&quot;
-                  </p>
-                  <div className="mt-6 flex items-center gap-x-4 border-t border-white/10 pt-6">
-                    <div className="h-10 w-10 bg-guardrep-800 rounded-full flex items-center justify-center text-guardrep-300 font-bold">MR</div>
-                    <div>
-                      <div className="font-semibold text-white">Michael Rodriguez</div>
-                      <div className="text-sm text-guardrep-400">Founder, Elite Contractors</div>
-                    </div>
+                <div className="rounded-2xl bg-white/5 p-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
+                  <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black ring-1 ring-white/10">
+                    <video
+                      src="/testimonial%203%20.mp4"
+                      className="w-full h-full object-contain"
+                      controls
+                      playsInline
+                      preload="metadata"
+                    />
                   </div>
                 </div>
               </div>
