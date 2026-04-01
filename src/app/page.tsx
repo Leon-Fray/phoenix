@@ -690,6 +690,7 @@ export default function Home() {
                       controls
                       playsInline
                       preload="metadata"
+                      onError={(e) => console.error('Video failed to load:', e)}
                     />
                   </div>
                 </div>
@@ -702,6 +703,7 @@ export default function Home() {
                       controls
                       playsInline
                       preload="metadata"
+                      onError={(e) => console.error('Video failed to load:', e)}
                     />
                   </div>
                 </div>
@@ -714,6 +716,7 @@ export default function Home() {
                       controls
                       playsInline
                       preload="metadata"
+                      onError={(e) => console.error('Video failed to load:', e)}
                     />
                   </div>
                 </div>
