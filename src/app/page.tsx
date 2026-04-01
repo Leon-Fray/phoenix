@@ -697,7 +697,7 @@ export default function Home() {
                 <div className="rounded-2xl bg-white/5 p-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm">
                   <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black ring-1 ring-white/10">
                     <video
-                      src="/testimonial%202%20.mp4"
+                      src="/testimonial2.mp4"
                       className="w-full h-full object-contain"
                       controls
                       playsInline
@@ -709,7 +709,7 @@ export default function Home() {
                 <div className="rounded-2xl bg-white/5 p-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
                   <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black ring-1 ring-white/10">
                     <video
-                      src="/testimonial%203%20.mp4"
+                      src="/testimonial3.mp4"
                       className="w-full h-full object-contain"
                       controls
                       playsInline
